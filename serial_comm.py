@@ -17,3 +17,12 @@ while 1:
         ArduinoSerial.write('0') #send 0
         print ("LED turned OFF")
         time.sleep(1)
+
+from time import sleep
+import serial
+ser = serial.Serial('COM11', 9600) # Establish the connection on a specific port
+while True:
+    ser.write('1') # Convert the decimal number to ASCII then send it to the Arduino
+    sleep(1)
+    ser.write('0') # Convert the decimal number to ASCII then send it to the Arduino
+    sleep(1)
