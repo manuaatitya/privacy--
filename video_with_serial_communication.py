@@ -5,8 +5,8 @@ import serial
 from time import sleep
 
 
-# ArduinoSerial = serial.Serial('com18',9600) #Create Serial port object called arduinoSerialData
-# time.sleep(2) #wait for 2 secounds for the communication to get established
+ArduinoSerial = serial.Serial('com12',9600) #Create Serial port object called arduinoSerialData
+time.sleep(2) #wait for 2 secounds for the communication to get established
 
 
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
@@ -98,11 +98,11 @@ while True:
             person_present[face_names.index(i)] = (person_present[face_names.index(i)] + 1) % 2
         
         if((person_present[room_mates[0]] + person_present[room_mates[1]]) % 2 == 0):
-            ArduinoSerial.write('0') #send 1
-            print ("LED turned ON")
-        else:
             ArduinoSerial.write('0') #send 0
-            print ("LED turned OFF")
+            print ("LED turned Off")
+        else:
+            ArduinoSerial.write('1') #send 1
+            print ("LED turned On")
         
 
     process_this_frame = not process_this_frame
