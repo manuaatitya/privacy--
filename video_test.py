@@ -15,11 +15,11 @@ import numpy as np
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-manu_image = face_recognition.load_image_file("~/nit-hackathon/known_photos/manu.jpg")
+manu_image = face_recognition.load_image_file("/home/jaxxstar/git/privacy--/known_images/manu.jpg")
 manu_face_encoding = face_recognition.face_encodings(manu_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-jack_image = face_recognition.load_image_file("~/nit-hackathon/known_photos/jack.jpg")
+jack_image = face_recognition.load_image_file("/home/jaxxstar/git/privacy--/known_images/jack.jpg")
 jack_face_encoding = face_recognition.face_encodings(jack_image)[0]
 
 # Create arrays of known face encodings and their names
@@ -28,7 +28,7 @@ known_face_encodings = [
     jack_face_encoding
 ]
 known_face_names = [
-    "Manu",
+    "Jack",
     "Jack"
 ]
 

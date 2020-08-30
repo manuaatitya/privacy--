@@ -7,3 +7,4 @@
 ### Testing:
 - Trained Model check  
 ![](face_detection_real_time/manu_detection.gif)
+![](face_detection_real_time/jack_detection.gif)
