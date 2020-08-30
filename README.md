@@ -1,4 +1,4 @@
-# Face Detection Module 
+# Facial Recognition for Automatic Attendance
 ## SIH- Selection Round Submission
 ### Usage:
 - Add a single image of the person with the name of the person as the file name in the known_images folder.
