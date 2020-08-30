@@ -5,6 +5,7 @@
 - Add a single image of the person with the name of the person as the file name in the known_images folder.
 - Use the video_test.py file to test the real-time performance of the trained model in detecting faces from known_photos
 ### Testing:
-- Trained Model check  
+- Trained Model check: 1  
 ![](face_detection_real_time/manu_detection.gif)
+- Trained Model check: 2  
 ![](face_detection_real_time/jack_detection.gif)
