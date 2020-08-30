@@ -1,4 +1,5 @@
 # Facial Recognition for Automated Attendance
+- Facial Recognition module using just a single image (in this example from Studenet ID Card) for automated attendance. 
 ## SIH- Selection Round Submission
 ### Usage:
 - Add a single image of the person with the name of the person as the file name in the known_images folder.
